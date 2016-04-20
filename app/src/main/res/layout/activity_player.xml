@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRedBox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+
+    >
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="|&lt;"
+        android:id="@+id/btp"
+        android:layout_below="@+id/seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="&lt;&lt;"
+        android:id="@+id/btfb"
+        android:layout_alignBottom="@+id/btp"
+        android:layout_toRightOf="@+id/btp"
+        android:layout_toEndOf="@+id/btp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="||"
+        android:id="@+id/btplay"
+        android:layout_alignTop="@+id/btfb"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text=">>"
+        android:id="@+id/btff"
+        android:layout_alignTop="@+id/btplay"
+        android:layout_toLeftOf="@+id/btn"
+        android:layout_toStartOf="@+id/btn" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text=">|"
+        android:id="@+id/btn"
+        android:layout_alignTop="@+id/btff"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
